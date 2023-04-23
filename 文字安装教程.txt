@@ -1,0 +1,14 @@
+Java协同办公OA管理系统源码带文字安装教程
+
+技术架构
+框架：springboot + freemark + jpa +mybatis + mysql
+环境：jdk8 + mysql5.7 + IntelliJ IDEA + maven + nginx + 宝塔面板
+
+文字安装教程：
+1.下载源码，创建一个数据库，导入oasys.sql文件至数据库中。
+2.使用IDEA打开codes目录，等待安装java依赖完成后，修改数据库连接配置，修改相关路径，配置图片路径、文件路径、附件路径，修改文件路径如下：
+/codes/src/main/resources/application.properties
+3.修改好后打开OasysApplication.java，点击main方法运行，如果能正常访问localhost:8088，就可以对系统做二次开发了。
+4.点击编辑器右侧的maven，展开oasys模块，再点击Lifecycle，里面有个package，连续单击两次，就能够打包生成一个jar文件，jar文件输出的路径一般在target文件夹下。
+5.打开宝塔，在wwwroot目录下新建一个文件夹，把jar文件上传到上面，再回到网站，点击Java项目，项目类型选择Spring_boot，项目jar路径选择刚才上传的jar文件，端口要填写对应本地的8088端口，把域名绑定进去，点击提交就会自动映射端口，即可在宝塔部署成功。
+默认的后台管理员账号密码：admin 123456

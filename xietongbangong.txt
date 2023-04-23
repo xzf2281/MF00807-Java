@@ -1,0 +1,13 @@
+drop database if exists wx_oasys;
+
+flush privileges;
+
+create database if not exists wx_oasys default character set utf8 collate utf8_bin;
+
+drop user if exists 'user1'@'localhost';
+
+flush privileges;
+
+create user if not exists 'user1'@'localhost' identified by '123456';
+
+grant all privileges on wx_oasys.* to 'user1'@'localhost';
