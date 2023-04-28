@@ -15,7 +15,7 @@ a:hover {
 </style>
 <div class="row" style="padding-top: 10px;">
 	<div class="col-md-2">
-		<h1 style="font-size: 24px; margin: 0;" class="">类型管理</h1>
+		<h1 style="font-size: 24px; margin: 0;" class="">类型管理 </h1>
 	</div>
 	<div class="col-md-10 text-right">
 		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
@@ -37,8 +37,8 @@ a:hover {
 			</div>
 			<!--盒子身体-->
 			<form method="post" action="typecheck" onsubmit="return check();">
-			<div class="box-body no-padding">
-				<div class="box-body">
+			<div class="box-body no-padding" style="text-align: center;">
+				<div class="box-body" style="text-align: center;">
 				<div class="alert alert-danger alert-dismissable" role="alert"
 							style="display: none;">
 							错误信息:<button class="close" type="button">&times;</button>

@@ -10,7 +10,7 @@
 							<th scope="col">操作</th>
 						</tr>
 						<#list oneMenuAll as one>
-						<tr style="background:rgba(255, 235, 59, 0.19);">
+						<tr style="background:rgba(0, 191, 255, 0.2);">
 							<td>${(one.menuName)!''}</td>
 							<td><span class="glyphicon ${(one.menuIcon)!''}"></span></td>
 							<td><span>${(one.menuUrl)!''}</span></td>

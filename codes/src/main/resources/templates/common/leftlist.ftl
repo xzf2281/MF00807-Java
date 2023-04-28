@@ -46,13 +46,13 @@
 </div>
 <!--把最顶上左侧的logo，栅格系统分2份-->
 <div class="col-lg-2 col-md-2 smallDiv"
-	style="padding: 0; margin: 0; display: block;">
+	style="padding: 0; margin: 0; width:200px;display: block;">
 	<div class="col-md-12 green-g">
-		<a href="index" class="navbar-brand" style="padding: 8px;color: white;font-size: 27px">OA自动办公系统</a>
-<#--
-		<a href="index" class="navbar-brand" style="padding: 8px 40px;"><img
-			src="images/logo.png" /></a>
--->
+		<a href="index" class="navbar-brand" style="padding: 8px;color: white;font-size: 20px">OA自动办公系统</a>
+
+<#--		<a href="index" class="navbar-brand" style="padding: 10px 10px;"><img-->
+<#--			src="images/logo.png" /></a>-->
+
 	</div>
 	<div class="col-md-12 list-left"
 		style="background: #222d32; height: 845px">

@@ -1,9 +1,9 @@
 
 <div class="bgc-w box box-primary">
 	<!--盒子头-->
-	<div class="box-header">
+	<div class="box-header" style="padding-bottom: 20px">
 		<h3 class="box-title">
-			<a href="addtask" class="label " style="padding: 5px;"> <span
+			<a href="addtask" class="label " style="padding: 5px;"><span
 				class="glyphicon glyphicon-plus"></span>
 			</a>
 		</h3>
@@ -18,6 +18,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!--盒子身体-->
 	<div class="box-body no-padding">
 		<div class="table-responsive">

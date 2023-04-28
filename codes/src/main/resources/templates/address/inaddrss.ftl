@@ -23,7 +23,7 @@
 			<tr>
 				<th scope="col">部门</th>
 				<th scope="col">职位</th>
-				<th scope="col">头像</th>
+<#--				<th scope="col">头像</th>-->
 				<th scope="col">姓名</th>
 				<th scope="col">性别</th>
 				<th scope="col">Tel</th>
@@ -35,15 +35,16 @@
 			<tr>
 				<td><span>${user.dept.deptName}</span></td>
 				<td><span>${user.position.name}</span></td>
-				<td><a href="#"> <img src="image/${(user.imgPath)!'timg.jpg'}" class="img-circle"
-						style="width: 24px; height: 24px;">
-				</a></td>
+<#--				头像-->
+<#--				<td><a href="#"> <img src="image/${(user.imgPath)!'timg.jpg'}" class="img-circle"-->
+<#--						style="width: 24px; height: 24px;">-->
+<#--				</a></td>-->
 				<td><span>${user.userName}</span></td>
 				<td><span>
-				<#if user.sex=="男">
-					<img src="images/male.png" alt="男" style="width: 20px;height: 20px" />
-				<#else>
-					<img src="images/female.png" alt="女" style="width: 20px;height: 20px" />
+				<#if user.sex=="男">男
+<#--					<img src="images/male.png" alt="男" style="width: 20px;height: 20px" />-->
+				<#else>女
+<#--					<img src="images/female.png" alt="女" style="width: 20px;height: 20px" />-->
 				</#if>
 				</span></td>
 				<td><span>${user.userTel}</span></td>

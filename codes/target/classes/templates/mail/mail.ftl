@@ -21,7 +21,7 @@
 	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
-	<div class="col-md-3">
+	<div class="col-md-3" style="width: 18%">
 		<a class="btn btn-primary write"
 			style="width: 100%; margin-bottom: 20px;"> <span
 			class="glyphicon glyphicon-pencil"></span> 写信
@@ -83,7 +83,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="col-md-9 set ">
+	<div class="col-md-9 set" style="width: 80%">
 		<#include "/mail/allmail.ftl">
 		
 	</div>

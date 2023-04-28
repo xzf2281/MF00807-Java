@@ -24,24 +24,29 @@
 /* 这里将是蓝色主题的内容 */
 .blue {
 	background: #00c0ef !important;
+	/*background: #87CEEB !important;*/
 }
 .blue-box{
 	border-top: 3px solid #00c0ef;
+	/*border-top: 3px solid #87CEEB;*/
 }
 .blue-b{
-	background:#19a8cc;
+	background:#00c0ef;
+	/*background:#87CEFA;*/
 }
 .blue-none:focus,
 .blue-none:HOVER,
 .blue-none:visited
 {
-	background: #19a8cc!important;
+	background: #00c0ef!important;
+	/*background: #87CEFA!important;*/
 	color: white;
 }
 .blue-left:hover,
 .blue-left:focus,
 .blue-left:visited{
 	border-left: 3px solid #00c0ef!important;
+	/*border-left: 3px solid #87CEEB!important;*/
 }
 
 /* 这里将是红色主题的内容 */
@@ -79,11 +84,33 @@
 .green-none:focus,
 .green-none:HOVER,
 .green-none:visited{
-	background: #008d4c!important;;
+	background: #008d4c!important;
 	color: white;
 }
 .green-left:hover,
 .green-left:focus,
 .green-left:visited{
 	border-left: 3px solid #00a65a!important;
+}
+
+/* 这里将是灰色主题的内容 */
+.grey{
+	background: rgba(169,169,169,0.3) !important;
+}
+.grey-box{
+	border-top: 3px solid rgba(169,169,169,0.3);
+}
+.grey-g{
+	background: rgba(169,169,169,0.3);
+}
+.grey-none:focus,
+.grey-none:HOVER,
+.grey-none:visited{
+	background: rgba(169,169,169,0.3)!important;;
+	color: white;
+}
+.grey-left:hover,
+.grey-left:focus,
+.grey-left:visited{
+	border-left: 3px solid rgba(169,169,169,0.3)!important;
 }

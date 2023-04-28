@@ -91,15 +91,17 @@ li.activee>a {
 <body style="background-color: #ecf0f5;">
 	<div class="row" style="padding-top: 10px;">
 		<div class="col-md-2">
-			<h1 style="font-size: 24px; margin: 0;" class="">文件管理</h1>
+			<h1 style="font-size: 24px; margin: 0;" class="">知识库</h1>
 		</div>
 		<div class="col-md-10 text-right">
-			<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> >
-			<a disabled="disabled">文件管理</a>
+<#--			<a href="##">-->
+				<span class="glyphicon glyphicon-home"></span> 首页
+<#--			</a> >-->
+			> <a disabled="disabled">知识库</a>
 		</div>
 	</div>
 	<div class="row" style="padding-top: 15px;">
-		<div class="col-md-3">
+		<div class="col-md-3" style="width: 18%">
 			<form class = "fileuploadform" action="fileupload" method="post" enctype="multipart/form-data">
 			<!-- <a class="btn btn-primary" href="##"
 				style="width: 100%; margin-bottom: 20px;"><span
@@ -135,12 +137,12 @@ li.activee>a {
 							共享文件</a></li>
 					<li>
 						<a href="##" class="filetypetrash"><span
-							class="iconfont icon-lajitong"></span> 回收战</a>
+							class="iconfont icon-lajitong"></span> 回收站</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-9"  style="width: 80%">
 			<!--id="container"-->
 			<div class="loadfiletype">
 				<#include "/file/filetypeload.ftl"/>

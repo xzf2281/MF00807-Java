@@ -80,12 +80,14 @@ li.activee>a {
 		</h1>
 	</div>
 	<div class="col-md-10 text-right">
-		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">通讯录</a>
+<#--		<a href="##">-->
+			<span class="glyphicon glyphicon-home"></span> 首页
+<#--		</a>-->
+		> <a disabled="disabled">通讯录</a>
 	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
-	<div class="col-md-3">
+	<div class="col-md-3" style="width: 18%">
 		<a class="btn btn-primary addaddress" href="javascript:void(0);"
 			style="width: 100%; margin-bottom: 20px;"><span
 			class="glyphicon glyphicon-edit"></span> 新建联系人</a>
@@ -149,7 +151,7 @@ li.activee>a {
 			</ul>
 		</div>
 	</div>
-	<div class="col-md-9">
+	<div class="col-md-9" style="width: 80%">
 		<!--id="container"-->
 		<ul class="nav nav-pills nav-justified" id="thispills" style="margin-bottom: 14px;">
 		  <li role="presentation" class="active" style="border-left:1px solid #ccc;border-radius: 5px 0px 0px 5px;"><a href="javascript:void(0);">ALL</a></li>

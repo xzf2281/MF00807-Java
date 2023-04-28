@@ -1,6 +1,17 @@
 *{
 	font-size: 14px;
+	/*这边可以设置表格内容居中，表头不行*/
+	/*text-align: center !important;*/
 }
+/*整半天只要全部类上去就行了，难顶*/
+.table,th,tr,td{
+	text-align: center;
+}
+
+.table,th,tr,td{
+	border:1px solid rgba(0,0,0,0.1);
+}
+
 .box {
 	position: relative;
 	border-radius: 3px;
@@ -17,6 +28,7 @@
 	padding: 12px;
 	position: relative;
 	border-bottom: 1px solid #f4f4f4;
+	text-align: left !important;
 }
 
 .box-header .box-title {
@@ -33,18 +45,12 @@
 }
 
 .box-body {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
+	border-radius: 0 0 3px 3px;
 	padding: 10px;
 }
 
 .box-footer {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
+	border-radius: 0 0 3px 3px;
 	border-top: 1px solid #f4f4f4;
 	padding: 10px;
 	background-color: #fff;
@@ -82,11 +88,11 @@
 }
 
 #page .pageInfo {
-	text-align: left;
+	text-align: left !important;
 }
 
 #page .pageOperation {
-	text-align: right;
+	text-align: right !important;
 }
 
 #page .pageInfo>span {
@@ -97,11 +103,11 @@
 
 /*label样式变换  */
 .sheding {
-	color: #6d7b8a !important;
+	color: #FFA500 !important;
 }
 
 .sheding:hover {
-	background-color: #6d7b8a;
+	background-color: #FFA500;
 	color: #fff !important;
 }
 

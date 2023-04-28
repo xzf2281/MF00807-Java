@@ -2255,10 +2255,10 @@ caption {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #777;
-  text-align: left;
+  text-align: center;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
 .table {
   width: 100%;
@@ -2630,6 +2630,7 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
+  text-align: center;
 }
 .radio,
 .checkbox {

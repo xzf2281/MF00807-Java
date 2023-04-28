@@ -20,9 +20,11 @@
 			</p>
 	</div>
 	<div class="iconfont">
-		<span class="glyphicon glyphicon-time"></span>
+		<a href="attendcelist">
+			<span class="glyphicon glyphicon-time"></span>
+		</a>
 	</div>
-	<a href="attendcelist" class="moreduo"> 更多 <span
+	<a href="attendcelist" class="more"> 详情 <span
 		class="glyphicon glyphicon-circle-arrow-right"></span>
 	</a>
 </div>
@@ -47,8 +49,14 @@
 </#if>
 <script>
 	$(".attendce").on('click',function(){
-		confirm("您确定签到吗");
-		$("#refresh").load('singin');
+		let r = confirm("您确定签到吗");
+		if(r === true){
+			$("#refresh").load('singin');
+			console.log('querenqiandao');
+		}else {
+			console.log('quxiao');
+		}
+
 	});
     
 </script>

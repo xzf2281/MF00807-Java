@@ -23,12 +23,12 @@
 			<table class="table table-hover table-striped">
 				<thead>
 					<tr>
-						<th scope="col" class="co commen ">类型<span class="block"></span></th>
+						<th scope="col">类型</th>
 						<th scope="col">标题</th>
-						<th scope="col" class="co commen ">发布时间<span class="block"></span></th>
+						<th scope="col">发布时间</th>
 						<th scope="col">发布人</th>
 						<th scope="col">部门</th>
-						<th scope="col" class="co commen ">状态<span class="block"></span></th>
+						<th scope="col">状态</th>
 						<th>置顶</th>
 						<th scope="col">操作</th>
 					</tr>

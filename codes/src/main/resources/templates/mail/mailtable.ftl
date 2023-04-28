@@ -23,10 +23,10 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th scope="col" class="commen co">类型<span class="block"></span></th>
+					<th scope="col">类型</th>
 					<th scope="col">账号名</th>
-					<th scope="col" class="co commen">创建时间<span class="block"></span></th>
-					<th scope="col" class="co commen">状态<span class="block"></span></th>
+					<th scope="col">创建时间</th>
+					<th scope="col">状态</th>
 					<th scope="col">操作</th>
 				</tr>
 			</thead>

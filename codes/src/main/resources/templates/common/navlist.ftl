@@ -1,37 +1,38 @@
-<div class="col-md-12 green" >
+<#--<div class="col-md-12 green">-->
+<div class="col-md-12 grey">
 	<!--导航栏左侧按钮，-->
-	<ul class="nav navbar-nav navbar-left" style="margin-left: -15px;">
-		<li><a href="#" class="green-none white"><span
-				class="glyphicon glyphicon-menu-hamburger"></span></a></li>
-	</ul>
+<#--	<ul class="nav navbar-nav navbar-left" style="margin-left: -15px;">-->
+<#--		<li><a href="#" class="green-none white"><span-->
+<#--				class="glyphicon glyphicon-menu-hamburger"></span></a></li>-->
+<#--	</ul>-->
 	<!--右侧导航栏-->
 	<ul class="nav navbar-nav navbar-right moredeep">
 
-		<li><a href="javascript:changepath('/infromlist');" class="green-none white"><span
-				class="glyphicon glyphicon-bell"></span>
-				<#if notice==0>
-					<span class="badge blue-badge badge-notice"></span>
-				<#else>
-					<span class="badge blue-badge badge-notice">${(notice)!''}</span>
-				</#if>
+		<li><a href="javascript:changepath('/infromlist');" class="green-none white" title="通知"><span
+				class="glyphicon glyphicon-bell"> ${(notice)!''}</span>
+<#--				<#if notice==0>-->
+<#--					<span class="badge blue-badge badge-notice"></span>-->
+<#--				<#else>-->
+<#--					<span class="badge blue-badge badge-notice">${(notice)!''}</span>-->
+<#--				</#if>-->
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mail');" class="green-none white"><span
-				class="glyphicon glyphicon-envelope"></span>
-				<#if mail==0>
-					<span class="badge yellow-badge badge-mail"></span>
-				<#else>
-					<span class="badge yellow-badge badge-mail">${(mail)!''}</span>
-				</#if>
+		<li><a href="javascript:changepath('/mail');" class="green-none white" title="邮件"><span
+				class="glyphicon glyphicon-envelope"> ${(mail)!''}</span>
+<#--				<#if mail==0>-->
+<#--					<span class="badge yellow-badge badge-mail"></span>-->
+<#--				<#else>-->
+<#--					<span class="badge yellow-badge badge-mail">${(mail)!''}</span>-->
+<#--				</#if>-->
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mytask');" class="green-none white"><span
-				class="glyphicon glyphicon-flag"></span>
-				<#if task==0>
-					<span class="badge red-badge"></span>
-				<#else>
-					<span class="badge red-badge">${(task)!''}</span>
-				</#if>
+		<li><a href="javascript:changepath('/mytask');" class="green-none white" title="任务"><span
+				class="glyphicon glyphicon-flag"> ${(task)!''}</span>
+<#--				<#if task==0>-->
+<#--					<span class="badge red-badge"></span>-->
+<#--				<#else>-->
+<#--					<span class="badge red-badge">${(task)!''}</span>-->
+<#--				</#if>-->
 				</a>
 		</li>
 		<li class="dropdown">
@@ -56,7 +57,7 @@
 			</ul>
 		</li>
 
-		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown"><span
+		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown" title="历史记录"><span
 				class="glyphicon glyphicon-time"></span></a>
 				
 		<ul id="historypanel" class="dropdown-menu"

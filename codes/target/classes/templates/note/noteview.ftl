@@ -195,7 +195,7 @@ border: none;
 			</div>
 
 			<div class="row" style="padding-top: 15px;">
-				<div class="col-md-3">
+				<div class="col-md-3" style="width: 18%">
 					<a class="btn btn-primary " onclick="notejump('noteedit','-1')"
 						style="width: 100%; margin-bottom: 20px;"><span
 						class="glyphicon glyphicon-pencil"></span> 新建</a>
@@ -265,7 +265,7 @@ border: none;
 					</div>
 				</div>
 				
-				<div class="col-md-9 thistable" id="container">
+				<div class="col-md-9 thistable" id="container"  style="width: 80%">
 				<#include "/note/notewrite.ftl">
 				</div>
 				

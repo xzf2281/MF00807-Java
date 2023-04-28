@@ -66,7 +66,7 @@ a:hover {
 }
 
 th .paixu:HOVER{
-color:blue;
+color:black;
 }
 
 .box {
@@ -83,14 +83,18 @@ $(function(){
 </script> -->
 </head>
 
+
+<#--没在用-->
 <body style="background-color: #ecf0f5;">
 	<div class="row" style="padding-top:10px">
 		<div class="col-md-2">
 			<h1 style="font-size: 24px; margin: 0;" class="">考勤列表</h1>
 		</div>
 		<div class="col-md-10 text-right">
-			<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> >
-			<a disabled="disabled">考勤列表</a>
+<#--			<a href="##">-->
+				<span class="glyphicon glyphicon-home"></span> 首页
+<#--			</a> >-->
+			> <a disabled="disabled">考勤列表</a>
 		</div>
 	</div>
 

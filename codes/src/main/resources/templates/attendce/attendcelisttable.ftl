@@ -1,3 +1,4 @@
+<#--没在用-->
 <div class="bgc-w box box-primary">
 				<div class="box-header" style="padding-bottom: 20px">
                   <a class="label label-success" href=""><span
@@ -15,23 +16,11 @@
 						<div class="">
 							<table class="table table-hover table-striped">
 								<tr class="table-header">
-									<th scope="col" class="paixu thistype">类型
-										<#if type?? && icon??>
-										<span class="glyphicon ${icon}"></span>
-										</#if>
-									</th>
-									<th scope="col"><span class="paixu thistime">时间
-						<#if time?? && icon??>
-							<span class="glyphicon ${icon}"></span>
-						</#if>
-						</span></th>
+									<th scope="col">类型</th>
+									<th scope="col">时间</th>
 									<th scope="col">ip</th>
 									<th scope="col">备注</th>
-									<th scope="col"><span class="paixu thisstatus">状态
-						<#if status?? && icon??>
-							<span class="glyphicon ${icon}"></span>
-						</#if>
-						</span></th>
+									<th scope="col">状态</th>
 								</tr>
 								    <#if alist??>
 									<#list alist as att>

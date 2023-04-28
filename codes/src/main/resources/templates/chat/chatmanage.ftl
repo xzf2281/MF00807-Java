@@ -22,7 +22,9 @@ a:hover {
 		<h1 style="font-size: 24px; margin: 0;" class="">${name}</h1>
 	</div>
 	<div class="col-md-10 text-right">
-		<a href="index"><span class="glyphicon glyphicon-home"></span> 首页</a>
+<#--		<a href="index">-->
+			<span class="glyphicon glyphicon-home"></span> 首页
+<#--		</a>-->
 		> <a disabled="disabled">${name}</a>
 	</div>
 </div>

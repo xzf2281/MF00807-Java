@@ -42,7 +42,7 @@ a:hover {
 <div class="row" style="padding-top: 15px;">
 	<div class="col-md-12 thistable">
 		<!--id="container"-->
-		<#include "/task/mytasklist.ftl">
+		<#include "mytasklist.ftl">
 	</div>
 </div>
 

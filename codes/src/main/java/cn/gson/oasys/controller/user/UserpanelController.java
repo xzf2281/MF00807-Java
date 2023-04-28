@@ -228,7 +228,9 @@ public class UserpanelController {
 		String path = startpath.replace("/image", "");
 		
 		File f = new File(rootpath, path);
-		
+		if(f ==null){
+			return;
+		}
 		ServletOutputStream sos = response.getOutputStream();
 		FileInputStream input = new FileInputStream(f.getPath());
 		byte[] data = new byte[(int) f.length()];

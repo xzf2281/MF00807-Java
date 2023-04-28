@@ -5,20 +5,48 @@
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
 }
 
+/*.kaoqin {*/
+/*	background: #00c0ef !important;*/
+/*}*/
+
+/*.filecolor {*/
+/*	background-color: #00a65a !important;*/
+/*}*/
+
+/*.tongxun {*/
+/*	background-color: #f39c12 !important;*/
+/*}*/
+
+/*.chat {*/
+/*	background-color: #dd4b39 !important;*/
+/*}*/
+
 .kaoqin {
-	background: #00c0ef !important;
+	background: rgba(0,191,255,0.5) !important;
+	border-style: solid;
+	border-width: medium;
+	border-color: #F0FFFF;
 }
 
 .filecolor {
-	background-color: #00a65a !important;
+	background-color: rgba(0,191,255,0.5) !important;
+	border-style: solid;
+	border-width: medium;
+	border-color: #F0FFFF;
 }
 
 .tongxun {
-	background-color: #f39c12 !important;
+	background-color: rgba(0,191,255,0.5) !important;
+	border-style: solid;
+	border-width: medium;
+	border-color: #F0FFFF;
 }
 
 .chat {
-	background-color: #dd4b39 !important;
+	background-color: rgba(0,191,255,0.5) !important;
+	border-style: solid;
+	border-width: medium;
+	border-color: #F0FFFF;
 }
 
 .wenzi {
@@ -36,7 +64,7 @@
 	font-size: 86px;
 }
 
-.moreduo {
+.more {
 	display: block;
 	line-height: 26px;
 	background: rgba(0, 0, 0, 0.1);
@@ -45,7 +73,7 @@
 	text-align: center;
 }
 
-.moreduo:hover {
+.more:hover {
 	text-decoration: none;
 }
 /*盒子模型基本css*/
@@ -208,7 +236,7 @@
     cursor: pointer;
 			}
 			.col-md-7  td,th{
-			text-align: left !important;
+			text-align: center !important;
 			}
 			.tdhuifu {
 			 padding-left: 13px !important;
@@ -220,7 +248,7 @@
 			}
 			/*本月 文字颜色*/
 			.currentday{
-				color: white;
+				color: rgba(0,191,255,0.8);
 			}
 			/*其他月颜色*/
 			.lastMonth{

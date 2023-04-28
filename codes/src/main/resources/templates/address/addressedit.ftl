@@ -47,7 +47,7 @@ a:hover {
 					<#if du?? & du.catalogName?? & du.catalogName!="">
 						<option value="${(du.catalogName)!''}">${(du.catalogName)!'外部通讯录'}</option>
 					<#else>
-						<option value="${(du.catalogName)!''}">外部通讯录</option>
+<#--						<option value="${(du.catalogName)!''}">外部通讯录</option>-->
 					</#if>
 						<option value="">外部通讯录</option>
 					<#list calogs as ca>

@@ -298,7 +298,7 @@ function check() {
 			if(index == 1){
 				var $tel = $(this).val();
 				
-				if(isPhoneNo($tel) == false){
+				if(isPhoneNo($tel) === false){
 					$(this).parent().addClass("has-error has-feedback");
  					alertCheck("手机格式错误");
  					isRight = 0;
@@ -349,8 +349,11 @@ function check() {
 }
 
 // 验证手机号
-function isPhoneNo(phone) { 
- var pattern = /^1[34578]\d{9}$/; 
+function isPhoneNo(phone) {
+	//匹配“1”开头的11位数字
+	var pattern = /^1\d{10}$/;
+	//匹配“1”开头，第二位是“3,4,5,7,8”任意一位的11位数字
+	// var pattern = /^1[34578]\d{9}$/;
  return pattern.test(phone); 
 }
  

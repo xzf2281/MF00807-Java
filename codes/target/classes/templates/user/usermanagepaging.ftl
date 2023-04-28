@@ -26,8 +26,7 @@
 		<div class="table-responsive">
 			<table class="table table-hover table-striped">
 				<tr>
-					
-					<th scope="col">&nbsp;</th>
+<#--					<th scope="col">头像</th>-->
 					<th scope="col">部门</th>
 					<th scope="col">真实姓名</th>
 					<th scope="col">用户名</th>
@@ -38,19 +37,20 @@
 				</tr>
 				<#list users as user>
 					<tr>
-						<td>
+<#--						头像不显示-->
+<#--						<td>-->
 						<!-- <img src="images/handsome.jpg" class="img-circle"
 							style="width: 25px; height: 25px;" /> -->
-							<#if user.imgPath?? && user.imgPath!=''  >
-								<img style="width: 25px;height: 25px;"
-									class="profile-user-img img-responsive img-circle"
-									src="/image/${user.imgPath}" />
-								<#else>
-								<img style="width: 25px;height: 25px;"
-									class="profile-user-img img-responsive img-circle"
-									src="/image//timg.jpg" alt="images"/>
-							</#if>
-						</td>
+<#--							<#if user.imgPath?? && user.imgPath!=''  >-->
+<#--								<img style="width: 25px;height: 25px;"-->
+<#--									class="profile-user-img img-responsive img-circle"-->
+<#--									src="/image/${user.imgPath}" />-->
+<#--								<#else>-->
+<#--								<img style="width: 25px;height: 25px;"-->
+<#--									class="profile-user-img img-responsive img-circle"-->
+<#--									src="/image//timg.jpg" alt="images"/>-->
+<#--							</#if>-->
+<#--						</td>-->
 						<td><span>${(user.dept.deptName)!''}</span></td>
 						<td><span>${(user.realName)!''}</span></td>
 						<td><span>${(user.userName)!''}</span></td>
