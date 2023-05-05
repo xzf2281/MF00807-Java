@@ -82,4 +82,6 @@
 	<#include "/common/paging.ftl"/>
 </div>
 
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
 <!-- <script type="text/javascript" src="js/common/sort.js" charset='utf-8'></script> -->

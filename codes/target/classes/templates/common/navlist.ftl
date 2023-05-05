@@ -1,14 +1,16 @@
 <#--<div class="col-md-12 green">-->
-<div class="col-md-12 grey">
+<div class="col-md-12" style="background-color: white">
 	<!--导航栏左侧按钮，-->
-<#--	<ul class="nav navbar-nav navbar-left" style="margin-left: -15px;">-->
-<#--		<li><a href="#" class="green-none white"><span-->
-<#--				class="glyphicon glyphicon-menu-hamburger"></span></a></li>-->
-<#--	</ul>-->
+	<ul class="nav navbar-nav navbar-left" style="margin-left: -15px;">
+		<li><a href="#" class="green-none"><span
+				class="glyphicon glyphicon-menu-hamburger black"></span></a></li>
+	</ul>
 	<!--右侧导航栏-->
 	<ul class="nav navbar-nav navbar-right moredeep">
 
-		<li><a href="javascript:changepath('/infromlist');" class="green-none white" title="通知"><span
+		<li><a href="http://117.72.11.14:3000/" style="font-size: 14px;color: black">ERP系统</a></li>
+
+		<li><a href="javascript:changepath('/infromlist');" class="green-none black" title="通知"><span
 				class="glyphicon glyphicon-bell"> ${(notice)!''}</span>
 <#--				<#if notice==0>-->
 <#--					<span class="badge blue-badge badge-notice"></span>-->
@@ -17,7 +19,7 @@
 <#--				</#if>-->
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mail');" class="green-none white" title="邮件"><span
+		<li><a href="javascript:changepath('/mail');" class="green-none black" title="邮件"><span
 				class="glyphicon glyphicon-envelope"> ${(mail)!''}</span>
 <#--				<#if mail==0>-->
 <#--					<span class="badge yellow-badge badge-mail"></span>-->
@@ -26,7 +28,7 @@
 <#--				</#if>-->
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mytask');" class="green-none white" title="任务"><span
+		<li><a href="javascript:changepath('/mytask');" class="green-none black" title="任务"><span
 				class="glyphicon glyphicon-flag"> ${(task)!''}</span>
 <#--				<#if task==0>-->
 <#--					<span class="badge red-badge"></span>-->
@@ -36,14 +38,14 @@
 				</a>
 		</li>
 		<li class="dropdown">
-		<!--设置导航栏头像面板--> 
-		<a href="#" class="green-none white" data-toggle="dropdown">
-				<img src="/image/${(user.imgPath)!'/timg.jpg'}" class="user-image" /> <span>${user.userName}</span>
+		<!--设置导航栏头像面板-->
+		<a href="#" class="green-none black" data-toggle="dropdown">
+				<img src="/image/${(user.imgPath)!'/timg.jpg'}" class="user-image" /> <span class="black">${user.userName}</span>
 		</a> <!--设置点击按钮弹出用户面板层-->
 			<ul class="dropdown-menu" style="padding:0;">
-				<li class="user-header green"><img src="/image/${(user.imgPath)!'/timg.jpg'}"
+				<li class="user-header white"><img src="/image/${(user.imgPath)!'/timg.jpg'}"
 					class="img-circle" style="width: 100px;height:100px;" />
-					<p class="white" style="">
+					<p class="black" style="margin-top: 10px">
 						<span>${user.dept.deptName} </span> / <span> ${user.role.roleName}</span><br> <small>${user.position.name}</small>
 					</p></li>
 				<li class="user-footer">
@@ -57,9 +59,9 @@
 			</ul>
 		</li>
 
-		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown" title="历史记录"><span
+		<li style="position: relative;"><a  id="history" class="green-none black" data-toggle="dropdown" title="历史记录"><span
 				class="glyphicon glyphicon-time"></span></a>
-				
+
 		<ul id="historypanel" class="dropdown-menu"
 				style="position: absolute; background-color: #222d32;">
 				<#include "/user/userlog.ftl"/>

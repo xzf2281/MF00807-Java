@@ -58,7 +58,10 @@
 				<!--盒子尾-->
 				<#include "/common/paging.ftl">
 			</div>
-			
+
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
+
 <script>
 		/* 分页插件按钮的点击事件 */
 		

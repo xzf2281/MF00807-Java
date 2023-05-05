@@ -10,7 +10,7 @@
 							<th scope="col">操作</th>
 						</tr>
 						<#list oneMenuAll as one>
-						<tr style="background:rgba(0, 191, 255, 0.2);">
+						<tr style="background:rgba(0, 191, 255, 0.1);">
 							<td>${(one.menuName)!''}</td>
 							<td><span class="glyphicon ${(one.menuIcon)!''}"></span></td>
 							<td><span>${(one.menuUrl)!''}</span></td>
@@ -33,7 +33,7 @@
 									class="glyphicon glyphicon-arrow-down"></span> 下移</a> <a 
 								href="menuedit?id=${one.menuId}" class="label xiugai"><span
 									class="glyphicon glyphicon-edit"></span> 修改</a> <a
-								onclick="{return confirm('删除该记录将不能恢复，确定删除吗？');};" 
+								onclick="{return confirm('删除该记录将不能恢复，确定删除吗？');}"
 								href="deletethis?id=${one.menuId}" class="label shanchu"><span
 									class="glyphicon glyphicon-remove"></span> 删除</a>
 									<a  href="menuedit?id=${one.menuId}&add=this" class="label xinzeng"><span

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login.css">
     <style>
-
         .inp {
             border: 1px solid #cccccc;
             border-radius: 2px;
@@ -18,8 +17,7 @@
             font-size: 18px;
         }
 
-        /*
-                .btn {
+        /* .btn {
                     display: inline-block;
                     box-sizing: border-box;
                     border: 1px solid #cccccc;
@@ -60,6 +58,10 @@
             cursor: pointer;
         }
 
+        .test {
+            background-color: rgba(220,220,220,0.4);
+            border-color: #C0C0C0 !important;
+        }
         .test:FOCUS {
             border-color: #66afe9 !important;
         }
@@ -114,12 +116,17 @@
 <body>
 <div class="cotn_principal">
     <div class="cont_centrar" style="top:5%;">
-        <div class="cont_login">
-            <div class="cont_forms cont_forms_active_login" style="height: 520px;width: 400px;border-radius: 15px;">
+        <div class="cont_login" style="width: 700px;height: 450px;">
+            <div class="cont_img_back_" style="width: 300px;">
+                <div style="text-align: center;color:white;margin-top: 200px">
+                    <h2>欢迎光临</h2>
+                </div>
+            </div>
+            <div class="cont_forms cont_forms_active_login" style="margin-top: 30px;height: 450px;width: 400px;border-radius: 15px;background-color: white;float: right;">
                 <#--        <div class="cont_img_back_"> <img src="/images/timg.jpeg" alt="背景图片" /> </div>-->
-                <div class="cont_img_back_"><img
-                            src="/images/nature-horizon-cloud-sky-sunlight-atmosphere-1248502-pxhere.com.jpg"
-                            alt="背景图片"/></div>
+<#--                <div class="cont_img_back_">-->
+<#--                    <img src="/images/nature-horizon-cloud-sky-sunlight-atmosphere-1248502-pxhere.com.jpg" alt="背景图片"/> -->
+<#--                </div>-->
                 <form action="logins" method="post" onsubmit="return check();">
                     <div class="cont_form_login" style="display: block;opacity: 1;width: 400px;">
                         <div class="alert alert-danger alert-dismissible" role="alert"
@@ -128,11 +135,11 @@
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"
                                     style="right:0px;"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <h2>LOGIN</h2>
-                        <input type="text" placeholder="UserName/TeL" autofocus="autofocus" value="${(userName)!''}"
-                               name="userName" class="userName test"/>
-                        <input type="password" placeholder="Password" value="" name="password" class="password test"/>
-                        <input type="text" placeholder="Code" style="margin-bottom: 20px;width:152px" name="code"
+                        <h2>OA协同办公</h2>
+                        <input type="text" placeholder="用户名/电话" autofocus="autofocus" name="userName"
+                               class="userName test"  value="${(userName)!''}"/>
+                        <input type="password" placeholder="密码" value="" name="password" class="password test"/>
+                        <input type="text" placeholder="验证码" style="margin-bottom: 20px;width:152px" name="code"
                                class="code test"/>
                         <div class="login-img" style="display:inline-block">
                             <img class="thisimg" onclick="this.src='captcha?r'+Date.now()" src="captcha" alt="验证码"
@@ -140,21 +147,21 @@
                         </div>
 
 						<div style="margin-top: 10px;">
-                            <button class="btn_forgot" type="button" onclick="forgotPassword()">忘记密码</button>
+                            <button class="btn_forgot" type="button" onclick="forgotPassword()"><strong>忘记密码?</strong></button>
 						</div>
 
-                        <button class="btn_login btn" type="submit">LOGIN</button>
-                        <div style="margin-top: 20px">
-                            <a href="http://117.72.11.14:3000/" style="color: #1E90FF">为新科技ERP系统</a>
-                        </div>
-
+                        <button class="btn_login btn" type="submit"><strong style="font-size: 16px">登&nbsp;&nbsp;&nbsp;录</strong></button>
+<#--                        <div style="margin-top: 20px">-->
+<#--                            <a href="http://117.72.11.14:3000/" style="color: #1E90FF">为新科技ERP系统</a>-->
+<#--                        </div>-->
                     </div>
                 </form>
             </div>
-            <div style="border: 1px solid transparent;">
-                <p style="margin-top: 550px;font-weight: 400;color: #FFFFE0;font-size: 22px;letter-spacing:1px ;">
-                    欢迎使用为新科技OA系统</p>
-            </div>
+
+<#--            <div style="border: 1px solid transparent;">-->
+<#--                <p style="margin-top: 550px;font-weight: 400;color: #FFFFE0;font-size: 22px;letter-spacing:1px ;">-->
+<#--                    欢迎使用为新科技OA系统</p>-->
+<#--            </div>-->
         </div>
 
     </div>

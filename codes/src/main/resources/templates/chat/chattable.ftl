@@ -79,6 +79,9 @@
 	<!--盒子尾-->
 	<#include "/common/paging.ftl"/>
 </div>
+
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
 <script>
 /* 显示表格的删除 */
 	$('.thistable').on('click','.deletethis',function(){

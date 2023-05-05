@@ -12,10 +12,11 @@
 <script	type="text/javascript" src="plugins/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript" src="js/attendce/weektable.js"></script>
 </head>
+
 	<body>
 	<div class="row" style="padding-top:10px">
 					<div class="col-md-2">
-						<h1 style="font-size:24px;margin: 0;" class="">考勤周报表</h1>
+						<h1 style="font-size:24px;margin: 0;" class="">考勤周报表123</h1>
 					</div>
 					<div class="col-md-10 text-right">
 						<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a>
@@ -24,7 +25,7 @@
 					</div>
 				</div>
 		<div class="row">
-	<div class="col-md-12">
+		<div class="col-md-12">
 		<div class="box">
 			<div class="box-header ">
 				<a class="label  label-back lastweek">
@@ -39,6 +40,7 @@
 				<span id="start"></span>
 				至
 				<span id="end"></span>
+			</div>
 				<div class="input-group" style="width:150px;float:right;top:-5px">
 											<input type="text" class="form-control input-sm pull-right baseKey" value="${(baseKey)!''}" placeholder="查找..." />
 											<div class="input-group-btn" style="top:-1px;">
@@ -55,3 +57,4 @@
 			</div>
 		</div>
 </body>
+</html>

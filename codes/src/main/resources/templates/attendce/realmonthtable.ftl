@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+	<#--表格列宽控制-->
+	<script type="text/javascript" src="js/columnWidthControl.js"></script>
 </head>
 <body>
 <table

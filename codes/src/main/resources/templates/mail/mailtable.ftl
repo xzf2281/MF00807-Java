@@ -54,8 +54,9 @@
 <!--盒子尾-->
 <#include "/common/paging.ftl">
 
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
 <script>
-
 $(function(){
 	$(".commen").click(function(){
 		var $val=$(this).text();

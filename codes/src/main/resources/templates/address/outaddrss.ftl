@@ -93,3 +93,6 @@
 <!--盒子尾-->
 <#include "/common/pagingmybatis.ftl"/>
 <#include "/address/sharemodal.ftl"/>
+
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>

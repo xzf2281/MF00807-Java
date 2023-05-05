@@ -1,67 +1,59 @@
 /*四个栅格系统，签到管理等*/
 .jichu {
 	position: relative;
-	border-radius: 3px;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
-}
-
-/*.kaoqin {*/
-/*	background: #00c0ef !important;*/
-/*}*/
-
-/*.filecolor {*/
-/*	background-color: #00a65a !important;*/
-/*}*/
-
-/*.tongxun {*/
-/*	background-color: #f39c12 !important;*/
-/*}*/
-
-/*.chat {*/
-/*	background-color: #dd4b39 !important;*/
-/*}*/
-
-.kaoqin {
-	background: rgba(0,191,255,0.5) !important;
+	background-color: white !important;
+	border-radius: 5px;
+	/*-webkit-box-shadow: #666 0px 0px 10px;*/
+	/*-moz-box-shadow: #666 0px 0px 10px;*/
+	/*box-shadow: #666 0px 0px 10px;*/
 	border-style: solid;
 	border-width: medium;
-	border-color: #F0FFFF;
+	border-color: #00c0ef;
+}
+
+.kaoqin {
+	/*background: rgba(0,191,255,0.5) !important;*/
+	/*border-style: solid;*/
+	/*border-width: medium;*/
+	/*border-color: #00c0ef;*/
 }
 
 .filecolor {
-	background-color: rgba(0,191,255,0.5) !important;
-	border-style: solid;
-	border-width: medium;
-	border-color: #F0FFFF;
+	/*background-color: rgba(0,191,255,0.5) !important;*/
+	/*border-style: solid;*/
+	/*border-width: medium;*/
+	/*border-color: #00c0ef;*/
 }
 
 .tongxun {
-	background-color: rgba(0,191,255,0.5) !important;
-	border-style: solid;
-	border-width: medium;
-	border-color: #F0FFFF;
+	/*background-color: rgba(0,191,255,0.5) !important;*/
+	/*border-style: solid;*/
+	/*border-width: medium;*/
+	/*border-color: #00c0ef;*/
 }
 
 .chat {
-	background-color: rgba(0,191,255,0.5) !important;
-	border-style: solid;
-	border-width: medium;
-	border-color: #F0FFFF;
+	/*background-color: rgba(0,191,255,0.5) !important;*/
+	/*border-style: solid;*/
+	/*border-width: medium;*/
+	/*border-color: #00c0ef;*/
 }
 
 .wenzi {
-	color: whitesmoke;
-	padding: 10px;
+	color: #696969;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .iconfont .glyphicon{
-	margin-top: -100px;
-	margin-left: 156px;
-	font-size: 76px;
-	color: rgba(0, 0, 0, 0.15);
+	margin-top: -70px;
+	/*margin-left: 170px;*/
+	margin-left: 60%;
+	font-size: 55px;
+	color: rgba(51, 122, 183, 0.8);
 }
 .iconfont .glyphicon:hover{
-	font-size: 86px;
+	font-size: 65px;
 }
 
 .more {
@@ -69,7 +61,7 @@
 	line-height: 26px;
 	background: rgba(0, 0, 0, 0.1);
 	height: 26px;
-	color: whitesmoke;
+	color: #696969;
 	text-align: center;
 }
 

@@ -15,6 +15,25 @@ maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="css/homelist.css" />
 <link rel="stylesheet" href="css/common/skintheme.css" />
 
+<#--	右边内容区宽度设置-->
+    <style>
+		.main .container-fluid .row{
+			background: aliceblue;
+			overflow: auto;
+			height:100vh;
+			/*display: -webkit-flex;*/
+			-webkit-flex-direction: column;
+		}
+
+        @media(min-width: 992px){
+            .col-md-10{ width: 87%; height: 100%}
+        }
+    </style>
+
+<#--	改变表格列宽-->
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<#--	颜色主题-->
 	<script type="text/javascript">
 		$(function(){
 			var themeSkin='${user.themeSkin}';
@@ -46,7 +65,7 @@ maximum-scale=1, user-scalable=no">
 					<!-- 导航栏 -->
 					<#include "/common/navlist.ftl">
 					<div class="col-md-12 list-right"
-						style="background: #ecf0f5; position: relative; height: 845px;padding: 0;">
+						style="background: #ecf0f5; position: relative; height: 100%;padding: 0;">
 						<!--内容区块-->
 						<iframe src="test2" frameBorder="0" width="100%" height="92%"></iframe>
 						<!-- 底部栏 -->
@@ -57,7 +76,5 @@ maximum-scale=1, user-scalable=no">
 		</div>
 	</div>
 
-
 </body>
-
 </html>

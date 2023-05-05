@@ -18,7 +18,7 @@
             <div class="table-responsive">
                 <table class="table table-hover table-striped">
                     <tr class="table-header">
-                        <th scope="col">类型 </th>
+                        <th scope="col">类型</th>
                         <th scope="col">标题</th>
                         <th scope="col">发布时间</th>
                         <th scope="col">发布人</th>
@@ -79,7 +79,9 @@
         </div>
     </div>
 
-
     <#include "/common/paging.ftl">
 
 </div>
+
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>

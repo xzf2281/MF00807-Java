@@ -1,160 +1,218 @@
-*{
-	font-size: 14px;
-	/*这边可以设置表格内容居中，表头不行*/
-	/*text-align: center !important;*/
-}
-/*整半天只要全部类上去就行了，难顶*/
-.table,th,tr,td{
-	text-align: center;
+* {
+    font-size: 14px;
+    /*这边可以设置表格内容居中，表头不行*/
+    /*text-align: center !important;*/
 }
 
-.table,th,tr,td{
-	border:1px solid rgba(0,0,0,0.1);
+.table, th, tr, td {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+/*表格列宽控制样式*/
+
+/*控制表格初始列宽*/
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    width: 100%;*/
+/*    table-layout: fixed;*/
+/*}*/
+/*控制列是否可以拖动*/
+th, td {
+    padding: 5px;
+    position: relative;
+    user-select: none;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.th-sisehandler {
+    position: absolute;
+    right: -0.5px;
+    top: 0;
+    z-index: 1;
+    width: 5px;
+    height: 100%;
+    padding-left: 4px;
+    cursor: col-resize;
+}
+
+.th-sisehandler::after {
+    content: '';
+    display: block;
+    width: 10px;
+    /*background-color: #00BFFF;*/
+    background: linear-gradient(cyan, #00BFFF);
+    /*演示为了看效果加上的，可以去掉*/
+    height: 100%;
+}
+
+.siselayer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    /*background-color: #F0F8FF;*/
+    /*演示为了看效果加上的，可以去掉*/
+    cursor: col-resize;
+}
+/*到这*/
+
 
 .box {
-	position: relative;
-	border-radius: 3px;
-	background: #ffffff;
-	border-top: 3px solid #d2d6de;
-	margin-bottom: 20px;
-	width: 100%;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .box-header {
-	color: #444;
-	display: block;
-	padding: 12px;
-	position: relative;
-	border-bottom: 1px solid #f4f4f4;
-	text-align: left !important;
+    color: #444;
+    display: block;
+    padding: 12px;
+    position: relative;
+    border-bottom: 1px solid #f4f4f4;
+    text-align: left !important;
 }
 
 .box-header .box-title {
-	display: inline-block;
-	font-size: 18px;
-	margin: 0;
-	line-height: 1;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
 }
 
-.box-header>.box-tools {
-	position: absolute;
-	right: 10px;
-	top: 5px;
+.box-header > .box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 
 .box-body {
-	border-radius: 0 0 3px 3px;
-	padding: 10px;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
 }
 
 .box-footer {
-	border-radius: 0 0 3px 3px;
-	border-top: 1px solid #f4f4f4;
-	padding: 10px;
-	background-color: #fff;
+    border-radius: 0 0 3px 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
 }
-.box-footer  .btn-primary{
-	margin-left: 16px;
+
+.box-footer .btn-primary {
+    margin-left: 16px;
 }
 
 .box .box-primary {
-	border-top-color: #3c8dbc;
+    border-top-color: #3c8dbc;
 }
 
 .box.box-solid {
-	border-top: 0;
+    border-top: 0;
 }
 
 .table .label {
-	padding: 0.4em .6em .3em;
-	line-height: 22px;
+    padding: 0.4em .6em .3em;
+    line-height: 22px;
 }
-.label{
-	font-weight:400;
+
+.label {
+    font-weight: 400;
 }
 
 .no-padding {
-	padding: 0 !important;
+    padding: 0 !important;
 }
 
 #page {
-	border-top: solid 1px #F5F5F5;
-	padding: 10px 0;
-	margin-top: -10px;
-	background: #FAFAFA;
-	overflow: hidden;
+    border-top: solid 1px #F5F5F5;
+    padding: 10px 0;
+    margin-top: -10px;
+    background: #FAFAFA;
+    overflow: hidden;
 }
 
 #page .pageInfo {
-	text-align: left !important;
+    text-align: left !important;
 }
 
 #page .pageOperation {
-	text-align: right !important;
+    text-align: right !important;
 }
 
-#page .pageInfo>span {
-	color: #000;
-	font-weight: bold;
-	padding: 5px;
+#page .pageInfo > span {
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
 }
 
 /*label样式变换  */
 .sheding {
-	color: #FFA500 !important;
+    color: #FFA500 !important;
 }
 
 .sheding:hover {
-	background-color: #FFA500;
-	color: #fff !important;
+    background-color: #FFA500;
+    color: #fff !important;
 }
 
 .xiugai {
-	color: #337ab7 !important;
+    color: #337ab7 !important;
 }
+
 .xiugai:visited {
-	color: #337ab7 !important;
+    color: #337ab7 !important;
 }
-.xiugai:hover{
-	background-color: #337ab7;
-	color: #fff !important;
+
+.xiugai:hover {
+    background-color: #337ab7;
+    color: #fff !important;
 }
 
 
 .shanchu {
-	color: #d9534f !important;
+    color: #d9534f !important;
 }
 
 .shanchu:hover {
-	background-color: #d9534f;
-	color: #fff !important;
+    background-color: #d9534f;
+    color: #fff !important;
 }
 
 
 .xinzeng {
-	color: #5cb85c !important;
+    color: #5cb85c !important;
 }
 
 .xinzeng:hover {
-	background-color: #5cb85c;
-	color: #fff !important;
-}
-.row{
-	margin-right: 0px;
-	margin-left:0px;
-}
-body{
-	background:none;
-}
-.input-group-btn .btn{
-	padding:7px;
+    background-color: #5cb85c;
+    color: #fff !important;
 }
 
-.input-group-btn .btn-change{
-	padding:5px;
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
+
+body {
+    background: none;
+}
+
+.input-group-btn .btn {
+    padding: 7px;
+}
+
+.input-group-btn .btn-change {
+    padding: 5px;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }

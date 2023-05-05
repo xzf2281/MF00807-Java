@@ -12,10 +12,11 @@
 <script	type="text/javascript" src="plugins/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript" src="js/attendce/monthtable.js"></script>
 </head>
+
 <body>
 	<div class="row" style="padding-top: 10px">
 		<div class="col-md-2">
-			<h1 style="font-size: 24px; margin: 0;" class="">考勤月报表</h1>
+			<h1 style="font-size: 24px; margin: 0;" class="">考勤月报表321</h1>
 		</div>
 		<div class="col-md-10 text-right">
 			<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> >
@@ -32,6 +33,7 @@
 				class="glyphicon glyphicon-chevron-right"></span> 下一月
 			</a>
 			<span id="month"></span>
+		</div>
 			<div class="input-group" style="width:150px;float:right;top:-5px">
 				<input type="text" class="form-control input-sm pull-right baseKey" value="${(baseKey)!''}" placeholder="查找..." />
 				<div class="input-group-btn" style="top:-1px;">
@@ -43,6 +45,8 @@
 				<#include "/attendce/realmonthtable.ftl">
 			</div>
 		</div>
-         </div>
-         </div>
 	</div>
+    </div>
+	</div>
+	</body>
+</html>

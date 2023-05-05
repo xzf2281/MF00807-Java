@@ -56,6 +56,8 @@ a:hover {
 			</div>
 		</div>
 	</div>
+
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
 <script>
 	$('.baseKeySubmit').on('click',function(){
 		var name=$('.baseKey').val();

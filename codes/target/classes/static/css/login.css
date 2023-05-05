@@ -10,18 +10,11 @@ font-family: 'Lato', sans-serif;
   position: absolute;
   width: 100%;
   height: 100%;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-/*background: #aac4bc; !* Old browsers *!*/
-/*background: -moz-linear-gradient(-45deg,  #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); !* FF3.6-15 *!*/
-/*background: -webkit-linear-gradient(-45deg,  #aac4bc 0%,#eca8a8 100%,#eed5a9 100%); !* Chrome10-25,Safari5.1-6 *!*/
-/*background: linear-gradient(135deg, #aac4bc 0%,#7cb0ca 100%,#eed5a9 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
   background-image:url("../images/blue-backgroud.jpg");
   /* 决定背景图像的位置是在视口内固定，或者随着包含它的区块滚动 */
   background-attachment: fixed;
   /* 图片可以保有其原有的尺寸，或者拉伸到新的尺寸，或者在保持其原有比例的同时缩放到元素的可用空间的尺寸。 */
   background-size: cover;
-  width: 100%;
-  height: 100%;
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -68,8 +61,8 @@ transition: all 0.5s;
 .cont_forms_active_login {
 box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
   height: 420px;  
-top:20px;
-left: 0px;
+  top:20px;
+  left: 300px;
   -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -110,10 +103,12 @@ animation-direction: alternate;
 }
 
 .cont_img_back_ {
-  position: absolute;
-  width: 950px;
-top:-80px;
-  left: -116px;
+  margin-top: 50px;
+  height: 450px;
+  background-image: url("../images/E-1113647-C779A8B8.jpg");
+  background-size: 100% 100%;
+  border-radius: 15px;
+  float: left;
 }
 
 .cont_img_back_ > img {
@@ -174,7 +169,8 @@ width: 80%;
 }
 
 .btn_forgot {
-  text-decoration:underline;
+  /*text-decoration:underline;*/
+  text-decoration: none;
   border: none;
   background-color:transparent;//背景透明
   padding: 10px;
@@ -355,7 +351,7 @@ input:focus{
 }
 
 .cont_form_login > h2 {
-margin-top: 110px; 
+margin-top: 60px;
 font-weight: 400;
   color: #757575;
 }

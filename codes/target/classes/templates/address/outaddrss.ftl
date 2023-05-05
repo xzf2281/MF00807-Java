@@ -22,7 +22,7 @@
 			<tr>
 				<th scope="col">分类</th>
 				<th scope="col">所属公司</th>
-				<th scope="col">头像</th>
+<#--				<th scope="col">头像</th>-->
 				<th scope="col">姓名</th>
 				<th scope="col">性别</th>
 				<th scope="col">Tel</th>
@@ -39,15 +39,15 @@
 				</#if>
 				
 				<td><span>${(d.companyname)!''}</span></td>
-				<td><a href="#"> <img src="/image/${(d.image_path)!'/timg.jpg'}" class="img-circle"
-						style="width: 25px; height: 25px;">
-				</a></td>
+<#--				<td><a href="#"> <img src="/image/${(d.image_path)!'/timg.jpg'}" class="img-circle"-->
+<#--						style="width: 25px; height: 25px;">-->
+<#--				</a></td>-->
 				<td><span>${(d.user_name)!''}</span></td>
 				<td><span>
-				<#if d.sex=="男">
-					<img src="images/male.png" alt="男" style="width: 20px;height: 20px" />
-				<#else>
-					<img src="images/female.png" alt="女" style="width: 20px;height: 20px" />
+				<#if d.sex=="男">男
+<#--					<img src="images/male.png" alt="男" style="width: 20px;height: 20px" />-->
+				<#else>女
+<#--					<img src="images/female.png" alt="女" style="width: 20px;height: 20px" />-->
 				</#if>
 				</span></td>
 				<td><span>${d.phone_number}</span></td>
@@ -93,3 +93,6 @@
 <!--盒子尾-->
 <#include "/common/pagingmybatis.ftl"/>
 <#include "/address/sharemodal.ftl"/>
+
+<#--表格列宽控制-->
+<script type="text/javascript" src="js/columnWidthControl.js"></script>

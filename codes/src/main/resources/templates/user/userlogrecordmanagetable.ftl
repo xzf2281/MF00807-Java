@@ -50,4 +50,5 @@
 			
 			<#include "/common/paging.ftl">
 		</div>
-		
+
+		<script type="text/javascript" src="js/columnWidthControl.js"></script>

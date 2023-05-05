@@ -30,6 +30,9 @@ a:hover {
 			<#include "/user/usermanagepaging.ftl"/>
 		</div>
 	</div>
+
+<script type="text/javascript" src="js/columnWidthControl.js"></script>
+
 <script type="text/javascript">
 	$(".thistable").on("click",".usersearchgo",function(){
 		var usersearch = $(".thistable .usersearch").val();

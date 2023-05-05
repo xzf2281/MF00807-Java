@@ -1,17 +1,17 @@
 
 <div class="jichu kaoqin " style="cursor: pointer;">
 	<div class="wenzi">
-			<a class="attendce" style="text-decoration: none; color:white;">
-				<h2 class="">
+			<a class="attendce" style="text-decoration: none; color:#696969;">
+				<h3 class="">
 					<#if alist??>
 							${alist.attendHmtime}
 						<#else>
 							未签到
 					</#if>
-				</h2>
+				</h3>
 			</a>
 			<p>
-			点击<span class="glyphicon glyphicon-hand-up"></span>
+			点击<span class="glyphicon glyphicon-hand-up black"></span>
 				<#if alist??>
 						${type}
 					<#else>

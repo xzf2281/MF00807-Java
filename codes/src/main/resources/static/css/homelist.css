@@ -24,6 +24,9 @@ a:hover{
 .white {
 	color: white;
 }
+.black {
+	color: black;
+}
 
 /* .nav .open>a,
 .nav .open>a:focus,
@@ -60,9 +63,9 @@ a:hover{
 }
 
 .user-panel {
-	height: 60px;
-	margin-top: 5px;
-	padding: 15px 5px 15px 5px;
+	/*height: 60px;*/
+	/*margin-top: 5px;*/
+	/*padding: 15px 5px 15px 5px;*/
 }
 
 .user-image-left {

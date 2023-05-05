@@ -31,8 +31,9 @@
 	/*border-top: 3px solid #87CEEB;*/
 }
 .blue-b{
-	background:#00c0ef;
+	/*background:#00c0ef;*/
 	/*background:#87CEFA;*/
+	background:white;
 }
 .blue-none:focus,
 .blue-none:HOVER,
