@@ -10,31 +10,16 @@
 
 		<li><a href="http://117.72.11.14:3000/" style="font-size: 14px;color: black">ERP系统</a></li>
 
-		<li><a href="javascript:changepath('/infromlist');" class="green-none black" title="通知"><span
-				class="glyphicon glyphicon-bell"> ${(notice)!''}</span>
-<#--				<#if notice==0>-->
-<#--					<span class="badge blue-badge badge-notice"></span>-->
-<#--				<#else>-->
-<#--					<span class="badge blue-badge badge-notice">${(notice)!''}</span>-->
-<#--				</#if>-->
+		<li><a href="javascript:changepath('/infromlist');" class="green-none black" title=" ${(notice)!''} 条通知未读">
+				<span class="glyphicon glyphicon-bell"></span>
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mail');" class="green-none black" title="邮件"><span
-				class="glyphicon glyphicon-envelope"> ${(mail)!''}</span>
-<#--				<#if mail==0>-->
-<#--					<span class="badge yellow-badge badge-mail"></span>-->
-<#--				<#else>-->
-<#--					<span class="badge yellow-badge badge-mail">${(mail)!''}</span>-->
-<#--				</#if>-->
+		<li><a href="javascript:changepath('/mail');" class="green-none black" title=" ${(mail)!''} 封邮件未读">
+				<span class="glyphicon glyphicon-envelope"></span>
 				</a>
 		</li>
-		<li><a href="javascript:changepath('/mytask');" class="green-none black" title="任务"><span
-				class="glyphicon glyphicon-flag"> ${(task)!''}</span>
-<#--				<#if task==0>-->
-<#--					<span class="badge red-badge"></span>-->
-<#--				<#else>-->
-<#--					<span class="badge red-badge">${(task)!''}</span>-->
-<#--				</#if>-->
+		<li><a href="javascript:changepath('/mytask');" class="green-none black" title=" ${(task)!''} 个任务未完成">
+				<span class="glyphicon glyphicon-flag"></span>
 				</a>
 		</li>
 		<li class="dropdown">

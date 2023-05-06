@@ -1,23 +1,28 @@
 /* 这里将是黄色主题的内容 */
 .yellow {
-	background: #f39c12 !important;
+	/*background: #f39c12 !important;*/
+	background: #00c0ef !important;
 }
 .yellow-box{
-	border-top: 3px solid #f39c12;
+	/*border-top: 3px solid #f39c12;*/
+	border-top: 3px solid #00c0ef;
 }
 .yellow-y{
-	background: #d69325;
+	/*background: #d69325;*/
+	background:white;
 }
 .yellow-none:focus,
 .yellow-none:HOVER,
 .yellow-none:visited{
-	background: #d69325!important;;
+	/*background: #d69325!important;;*/
+	background: #00c0ef!important;
 	color: white;
 }
 .yellow-left:hover,
 .yellow-left:focus,
 .yellow-left:visited{
-	border-left: 3px solid #f39c12!important;
+	/*border-left: 3px solid #f39c12!important;*/
+	border-left: 3px solid #00c0ef!important;
 }
 
 
@@ -39,8 +44,8 @@
 .blue-none:HOVER,
 .blue-none:visited
 {
-	background: #00c0ef!important;
 	/*background: #87CEFA!important;*/
+	background: #00c0ef!important;
 	color: white;
 }
 .blue-left:hover,
@@ -52,66 +57,54 @@
 
 /* 这里将是红色主题的内容 */
 .red {
-	background: #dd4b39 !important;
+	/*background: #dd4b39 !important;*/
+	background: #00c0ef !important;
 }
 .red-box{
-	border-top: 3px solid #dd4b39;
+	/*border-top: 3px solid #dd4b39;*/
+	border-top: 3px solid #00c0ef;
 }
 .red-r{
-	background:#c54030 !important;
+	/*background:#c54030 !important;*/
+	background:white;
 }
 .red-none:focus,
 .red-none:HOVER,
 .red-none:visited{
-	background: #c54030 !important;
+	/*background: #c54030 !important;*/
+	background: #00c0ef!important;
 	color: white;
 }
 .red-left:hover,
 .red-left:focus,
 .red-left:visited{
-	border-left: 3px solid #dd4b39 !important;
+	/*border-left: 3px solid #dd4b39 !important;*/
+	border-left: 3px solid #00c0ef!important;
 }
 
 /* 这里将是绿色主题的内容 */
 .green{
-	background: #00a65a !important;
+	/*background: #00a65a !important;*/
+	background: #00c0ef !important;
 }
 .green-box{
-	border-top: 3px solid #00a65a;
+	/*border-top: 3px solid #00a65a;*/
+	border-top: 3px solid #00c0ef;
 }
 .green-g{
-	background: #008d4c;
+	/*background: #008d4c;*/
+	background:white;
 }
 .green-none:focus,
 .green-none:HOVER,
 .green-none:visited{
-	background: #008d4c!important;
+	/*background: #008d4c!important;*/
+	background: #00c0ef!important;
 	color: white;
 }
 .green-left:hover,
 .green-left:focus,
 .green-left:visited{
-	border-left: 3px solid #00a65a!important;
-}
-
-/* 这里将是灰色主题的内容 */
-.grey{
-	background: rgba(169,169,169,0.3) !important;
-}
-.grey-box{
-	border-top: 3px solid rgba(169,169,169,0.3);
-}
-.grey-g{
-	background: rgba(169,169,169,0.3);
-}
-.grey-none:focus,
-.grey-none:HOVER,
-.grey-none:visited{
-	background: rgba(169,169,169,0.3)!important;;
-	color: white;
-}
-.grey-left:hover,
-.grey-left:focus,
-.grey-left:visited{
-	border-left: 3px solid rgba(169,169,169,0.3)!important;
+	/*border-left: 3px solid #00a65a!important;*/
+	border-left: 3px solid #00c0ef!important;
 }
