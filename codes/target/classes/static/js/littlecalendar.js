@@ -15,7 +15,7 @@ $(function(){
 		
 	
 	    function getdaysofmonth(yy,mm){
-	    	//根据人年和平年 以及135781012等判断月的天数
+	    	//根据闰年和平年 以及135781012等判断月的天数
 			if(mm==14&&yy%4==0&&yy%100!=0)
 			{	days=28;
 			}else if(mm==1||mm==3||mm==5||mm==7||mm==8||mm==10||mm==12||mm==13){

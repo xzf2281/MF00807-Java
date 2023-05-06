@@ -30,8 +30,6 @@
             toyellow();
         } else if (themeSkin == "red") {
             tored();
-        } else if (themeSkin == "grey") {
-            togrey();
         }
     });
 </script>
@@ -59,13 +57,8 @@
         parent.tored();
         tored();
     }
-
-    function funGrey() {
-        console.log("点击变灰了");
-        parent.togrey();
-        togrey();
-    }
 </script>
+
 <div class="head-show" style="position: relative; height: 76px;">
     <h3 style="display: inline-block; float: left;margin-left: 16px;">首页</h3>
     <#--	首页颜色控制面板-->
@@ -282,14 +275,16 @@
                                 <td>${(pro.typeNmae)!''}
                                 </td>
                                 <td>${(pro.applyTime)!''}</td>
-                                <td><#list prostatuslist as pros>
-                                        <#if pros.statusId==pro.statusId>
+                                <#list prostatuslist as pros>
+                                    <#if pros.statusId==pro.statusId>
+                                        <td>
                                             <span class="label ${(pros.statusColor)!''}">${(pros.statusName)!''}</span>
-                                        </#if>
-                                    </#list>
-                                </td>
+                                        </td>
+                                    </#if>
+                                </#list>
+
                                 <td><span>${(pro.processName)!''}</span></td>
-                                <td><a class="look-xiangxi"><span
+                                <td><a href="particular?id=${pro.processId}&typename=${(pro.typeNmae)!''}" class="look-xiangxi"><span
                                                 class="glyphicon glyphicon-search"> </span> 查看 </a></td>
                             </tr>
                         </#list>
@@ -637,6 +632,6 @@
     });   */
 </script>
 <script src="js/littlecalendar.js"></script>
-<script src="js/highcharts/jquery.js"></script>
-<script src="js/highcharts/highcharts.js"></script>
+<#--<script src="js/highcharts/jquery.js"></script>-->
+<#--<script src="js/highcharts/highcharts.js"></script>-->
 <script src="js/tongji.js"></script>

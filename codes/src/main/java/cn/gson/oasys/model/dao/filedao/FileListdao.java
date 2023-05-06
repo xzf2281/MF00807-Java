@@ -37,5 +37,12 @@ public interface FileListdao extends PagingAndSortingRepository<FileList, Long>{
 	List<FileList> findByUserAndFileIsshareAndFileIstrash(User user,Long isshare,Long istrash);
 	
 	List<FileList> findByUserAndFileIstrashAndFileNameLike(User user,Long istrash,String likefile);
-	
+
+	/**获取当前用户的文件数量(不包括回收站内的资源)
+	 *
+	 * @param user
+	 * @return int
+	 */
+	@Query("select count(*) from FileList f where f.user=?1 and f.fileIstrash=0")
+	int getFileListByUserId(User user);
 }

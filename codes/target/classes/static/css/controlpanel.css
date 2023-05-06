@@ -71,8 +71,8 @@
 /*盒子模型基本css*/
 .right-btn-group {
 	color: white;
-	border-color: #367fa9;
-	border: 1px solid transparent;
+	/*border-color: #367fa9;*/
+	/*border: 1px solid transparent;*/
 	border-radius: 3px;
 	margin-top: 5px;
 	margin-right: 10px;

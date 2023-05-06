@@ -150,9 +150,9 @@ a:hover {
 								<label class="control-label"> <span>皮肤</span>
 								</label> <select class="form-control" name="themeSkin" value="${(user.themeSkin)!''}">
 									<option value="blue">经典蓝</option>
-									<option value="green">原谅绿</option>
-									<option value="red">姨妈红</option>
-									<option value="yellow">shit黄</option>
+<#--									<option value="green">原谅绿</option>-->
+<#--									<option value="red">姨妈红</option>-->
+<#--									<option value="yellow">shit黄</option>-->
 								</select>
 							</div>
 							<input type="hidden" name="userId" value="${(user.userId)!''}"/>

@@ -171,7 +171,6 @@ public class IndexController {
 	}
 	/**
 	 * 菜单查找
-	 * @param userId
 	 * @param req
 	 * @return
 	 */
@@ -198,6 +197,12 @@ public class IndexController {
 		return "common/leftlists";
 		
 	}
+	/**
+	 * 用户日志
+	 * @param userId
+	 * @param req
+	 * @return
+	 */
 	@RequestMapping("userlogs")
 	public String usreLog(@SessionAttribute("userId") Long userId,HttpServletRequest req){
 		List<UserLog> userLogs=userLogDao.findByUser(userId);
@@ -232,9 +237,10 @@ public class IndexController {
 		Long userId = Long.parseLong(session.getAttribute("userId") + "");
 		User user=uDao.findOne(userId);
 		request.setAttribute("user", user);
+
 		//计算三个模块的记录条数
-		request.setAttribute("filenum", filedao.count());
-		request.setAttribute("directornum", directorDao.count());
+		request.setAttribute("filenum", filedao.getFileListByUserId(user));
+		request.setAttribute("directornum", directorDao.getDirectorByUserId(user));
 		request.setAttribute("discussnum", discussDao.count());
 		
 		List<Map<String, Object>> list = nm.findMyNoticeLimit(userId);
